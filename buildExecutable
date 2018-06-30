@@ -1,0 +1,5 @@
+cd /
+docker stop helloworld
+docker rm helloworld
+docker build -t hello-world https://github.com/Prabhu4tx/noble/
+docker run -d --name helloworld -p 80:80 https://github.com/Prabhu4tx/noble/src/:/var/www/html hello-world
